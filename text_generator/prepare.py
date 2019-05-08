@@ -30,4 +30,4 @@ def from_data(data):
     predictors, label = input_sequences[:, :-1], input_sequences[:, -1]
     label = ku.to_categorical(label, num_classes=total_words)
 
-    return predictors, label, max_sequence_len, total_words
+    return predictors, label, max_sequence_len, total_words, tokenizer
